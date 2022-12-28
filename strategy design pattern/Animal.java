@@ -1,6 +1,7 @@
 public class Animal
 {
     private String sound;
+    public Flys Flyingtype;
 // Instead of using an interface in a traditional way
 // we use an instance variable that is a subclass
 // of the Flys interface.
@@ -15,15 +16,17 @@ public class Animal
 // Composition allows you to change the capabilities of
 // objects at run time!
 
-    public void setsound( String sound ) 
+    public void Setsound( String sound ) 
     {
         this.sound = sound;
     }
-    public static void main(String[] args) {
-        Animal xx =new Animal();
-        xx.setsound("cat and dog");
-        System.out.println(xx.sound);
-
+    public String Trytofly()
+    {
+        return Flyingtype.fly();
+    }
+    public void Setflyingability( Flys newflytype)
+    {
+        Flyingtype = newflytype;
     }
         
 
