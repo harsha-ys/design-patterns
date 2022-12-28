@@ -7,5 +7,11 @@ public class Demo
 
         System.out.println("bruuna is a dog and can it fly ? " + bruuna.Trytofly());
         System.out.println("girawa is a bird and can it fly ? " + girawa.Trytofly());
+
+        //we also can change the behavior dynamically
+
+        bruuna.Setflyingability(new ItFlys());
+        System.out.println("bruuna is a dog and can it fly after changing the behavior dynamically? " + bruuna.Trytofly());
+
     }
 }

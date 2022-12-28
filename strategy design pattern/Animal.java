@@ -22,7 +22,7 @@ public class Animal
     }
     public String Trytofly()
     {
-        return Flyingtype.fly();
+        return Flyingtype.Fly();
     }
     public void Setflyingability( Flys newflytype)
     {
