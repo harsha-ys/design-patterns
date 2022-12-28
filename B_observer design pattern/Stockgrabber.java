@@ -22,7 +22,9 @@ public class Stockgrabber
     }
     public void notifyobserver()
     {
+        System.out.println("---------------------------------------------------------------");
         for(Observer observer : Observers) observer.update(aappleprice, hpprice, dellprice);
+        System.out.println("---------------------------------------------------------------");
     }
     public void setappleprice(double newappleprice)
     {
