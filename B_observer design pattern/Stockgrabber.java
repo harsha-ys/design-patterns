@@ -33,12 +33,12 @@ public class Stockgrabber
     }
     public void sethpprice(double newhpprice)
     {
-        this.aappleprice = newhpprice;
+        this.hpprice = newhpprice;
         notifyobserver();
     }
     public void setdellprice(double newdellprice)
     {
-        this.aappleprice = newdellprice;
+        this.dellprice = newdellprice;
         notifyobserver();
     }
 }

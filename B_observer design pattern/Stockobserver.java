@@ -6,9 +6,9 @@ public class Stockobserver implements Observer {
 
     private static int allobserveridtrack = 0;
     private int observerid ;
-    private Subject stockgrabber;
+    private Stockgrabber stockgrabber;
     
-    public Stockobserver(Subject stockgrabber)
+    public Stockobserver(Stockgrabber stockgrabber)
     {
         this.stockgrabber = stockgrabber;
         observerid = ++allobserveridtrack;
