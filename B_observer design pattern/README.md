@@ -3,4 +3,4 @@ an object called the subject(publisher) mantains a list of dependents called obs
 publisher notify the subscribers when a stage change occur using one of their method.
 
 Here we update observers with different prices   
-<img src="observer_pattern">
+<img src="observer_pattern.PNG">
