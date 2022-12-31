@@ -10,4 +10,4 @@ to encapsulate object creation
 
 Here i am building a factory that gives a required type of enemy ship dynamically.
 
-<img = src "uml.PNG">
+<img  src ="uml.PNG">
