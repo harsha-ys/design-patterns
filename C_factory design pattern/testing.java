@@ -28,7 +28,6 @@ public class testing
             if ( tobetested != null) dofight(tobetested); /* we only can call static methods inside another static method
             so we want to make dofight as static or else create a object of a testing class and call the dofight method from that */
             else System.out.println("correctly give the enemy ship type");
-
-.        }
+        }
     }
 }
