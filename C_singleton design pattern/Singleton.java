@@ -38,9 +38,15 @@ public class Singleton
                     e.printStackTrace();
                 }
             }
-
-            onlyoneinstance = new Singleton();
-            Collections.shuffle(onlyoneinstance.getletterlist());
+            synchronized(Singleton.class)/*synchronized using Singleton class object thus cause to give acces
+                                        to only one thread irrespective of the different number of threads the class owing*/
+            {
+                if( onlyoneinstance == null)
+                {
+                    onlyoneinstance = new Singleton();
+                    Collections.shuffle(onlyoneinstance.getletterlist());
+                }
+            }
         }
         return onlyoneinstance;
     }
