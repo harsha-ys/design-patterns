@@ -21,7 +21,7 @@ public class Singleton
 
     private Singleton(){};
 
-    public static Singleton getinstance()
+    public static synchronized Singleton getinstance()
     {
         if (onlyoneinstance == null )
         {
