@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.LinkedList;
 
 public class Singleton 
@@ -39,6 +40,7 @@ public class Singleton
             }
 
             onlyoneinstance = new Singleton();
+            Collections.shuffle(onlyoneinstance.getletterlist());
         }
         return onlyoneinstance;
     }
