@@ -1,3 +1,4 @@
+abstract factory design pattern is a creational design pattern.
 it is like a factory but everything is encapsulated.
     the method that orders the object
     the factories that build the object
